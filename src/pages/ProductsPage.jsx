@@ -15,6 +15,7 @@ const ProductsPage = () => {
     );
     setFilteredProducts(filteredProductsList);
   }, [filter]);
+
   return (
     <section id="all-products">
       <div className="container">
