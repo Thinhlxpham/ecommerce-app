@@ -76,10 +76,10 @@ const ProductPage = () => {
                 </div>
                 <div className="selected-product__right">
                   <h1 className="selected-product__title">
-                    {products[0]?.name}
+                    {selectedProduct?.name}
                   </h1>
                   <p className="selected-product__para">
-                    {products[0]?.description}
+                    {selectedProduct?.description}
                   </p>
                   <div className="selected-product__quantity">
                     <span className="selected-product__quantity__span selected-product__quantity__span-1">
@@ -109,7 +109,7 @@ const ProductPage = () => {
                       </button>
                     </div>
                     <span className="selected-product__quantity__span selected-product__quantity__span-2">
-                      $ {products[0]?.price * quantity}
+                      $ {selectedProduct?.price * quantity}
                     </span>
                   </div>
                   <button
@@ -126,15 +126,19 @@ const ProductPage = () => {
               <div className="specifications">
                 <div className="spec">
                   <h2 className="spec__title">Weight</h2>
-                  <span className="spec__detail">{products[0]?.weight}</span>
+                  <span className="spec__detail">
+                    {selectedProduct?.weight}
+                  </span>
                 </div>
                 <div className="spec">
                   <h2 className="spec__title">Texture</h2>
-                  <span className="spec__detail">{products[0]?.texture}</span>
+                  <span className="spec__detail">
+                    {selectedProduct?.texture}
+                  </span>
                 </div>
                 <div className="spec">
                   <h2 className="spec__title">Size</h2>
-                  <span className="spec__detail">{products[0]?.size}</span>
+                  <span className="spec__detail">{selectedProduct?.size}</span>
                 </div>
               </div>
             </>
